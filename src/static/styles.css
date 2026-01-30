@@ -142,3 +142,75 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants UI */
+.participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}
+
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.participants-list {
+  list-style-type: disc; /* keep bulleted list as requested */
+  padding-left: 22px;
+  margin: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(250,250,250,0.6));
+  border: 1px solid rgba(20,33,61,0.04);
+  font-size: 0.95rem;
+  color: #223;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  background-color: #1a237e;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+}
+
+.participant-name {
+  line-height: 1;
+}
+
+.participant-more {
+  margin: 6px 0;
+  color: #556;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Empty state */
+.no-participants {
+  font-style: italic;
+  color: #556;
+  margin: 6px 0;
+}
+
+/* Slightly reduce spacing on small screens */
+@media (max-width: 480px) {
+  .participant-item { padding: 4px 6px; }
+  .avatar { width: 24px; height: 24px; min-width: 24px; font-size: 11px; }
+}
