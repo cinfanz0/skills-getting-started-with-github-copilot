@@ -158,8 +158,8 @@ footer {
 }
 
 .participants-list {
-  list-style-type: disc; /* keep bulleted list as requested */
-  padding-left: 22px;
+  list-style-type: none; /* bullets hidden for cleaner UI */
+  padding-left: 0;
   margin: 0;
 }
 
@@ -174,6 +174,40 @@ footer {
   border: 1px solid rgba(20,33,61,0.04);
   font-size: 0.95rem;
   color: #223;
+}
+
+/* Remove button */
+.participant-remove {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  line-height: 1;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.participant-remove:hover {
+  background: rgba(198,40,40,0.06);
+  color: #b71c1c;
+}
+.participant-remove:focus {
+  outline: 2px solid rgba(26,35,126,0.18);
+  outline-offset: 2px;
+}
+
+/* Accessibility helper */
+.sr-only {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }
 
 .avatar {
